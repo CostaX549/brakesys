@@ -26,6 +26,10 @@ import { SearchContext } from '../context/search'
 
 
 export default function Header() {
+  const handleNavLinkClick = () => {
+
+    setNav(false);
+  };
   const { setSearchActive } = useContext(SearchContext)
 
   const [header, setHeader] = useState(false);
@@ -87,6 +91,7 @@ export default function Header() {
           <Link 
            className=
           'cursor-pointer'
+          onClick={handleNavLinkClick}
            to='home'
            activeClass='active' 
            smooth={desktopMode} 
@@ -99,6 +104,7 @@ export default function Header() {
            className=
           'cursor-pointer'
            to='why'
+           onClick={handleNavLinkClick}
            activeClass='active' 
            smooth={desktopMode} 
            spy={true}

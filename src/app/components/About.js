@@ -67,7 +67,7 @@ const About = () => {
                     +
                   </div>
                   <div className='uppercase text-[13px] font-semibold text-secondary '>
-                    car <br /> types
+                    tipos de <br /> carros
                   </div>
                 </div>
                  {/* rental outlets */}
@@ -85,11 +85,11 @@ const About = () => {
                  <div className='flex flex-col w-[100px]'>
                   <MdOutlineBuildCircle className='text-5xl text-accent mb-2' />
                   <div className='text-3xl font-black'>
-                    {inView ?  ( <CountUp start={0} end={35} duration={3} delay={1} /> ) : null }
+                    {inView ?  ( <CountUp start={0} end={1} duration={1} delay={1} /> ) : null }
                     
                   </div>
                   <div className='uppercase text-[13px] font-semibold text-secondary '>
-                    repair <br /> points
+                    ponto de <br /> reparo
                   </div>
                 </div>
                
@@ -102,7 +102,7 @@ const About = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6}}
                className='hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px]  h-16 uppercase font-medium text-white tracking-[2px] text-[13px] w-[250px]'>
-                See all cars
+                Veja o projeto
                 </motion.button>
             </div>
            </div>

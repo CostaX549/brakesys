@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from "/variants"
 
 // icons
-import { MdHandshake, MdKey, MdTrendingUp } from 'react-icons/md'
+import { MdSecurity, MdAccessTime, MdTrendingUp } from 'react-icons/md'
 
 export default function Why() {
   return (
@@ -36,7 +36,7 @@ export default function Why() {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6}}
-         className='md:flex justify-center mb-6 xl:mb-2'>
+         className='hidden md:flex justify-center mb-6 xl:mb-2'>
           <Image src={'/images/why/sangrador3.png'} width={400} height={400} alt='' />
         </motion.div>
         {/* grid items */}
@@ -48,21 +48,21 @@ export default function Why() {
          className='flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]'>
           {/* item 1 */}
           <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
-            <MdKey className='text-[38px] text-accent mb-4' />
-            <h3 className='h3'>Rent simply and quickly</h3>
-            <p className='hidden xl:flex'>We prioritize your need and we go above and beyond to ensure your experience with us is nothing short of outstanding.</p>
+            <MdAccessTime className='text-[38px] text-accent mb-4' />
+            <h3 className='h3'>Agilidade</h3>
+            <p className='hidden xl:flex'>Diminui o tempo do processo de sangria.</p>
           </div>
             {/* item 2 */}
           <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
             <MdTrendingUp className='text-[38px] text-accent mb-4' />
-            <h3 className='h3'>Rent simply and quickly</h3>
-            <p className='hidden xl:flex'>We prioritize your need and we go above and beyond to ensure your experience with us is nothing short of outstanding.</p>
+            <h3 className='h3'>Eficiência</h3>
+            <p className='hidden xl:flex'>Testado e aprovado por professores e estudantes.</p>
           </div>
                {/* item 3 */}
                <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
-            <MdHandshake className='text-[38px] text-accent mb-4' />
-            <h3 className='h3'>Rent simply and quickly</h3>
-            <p className='hidden xl:flex'>We prioritize your need and we go above and beyond to ensure your experience with us is nothing short of outstanding.</p>
+            <MdSecurity className='text-[38px] text-accent mb-4' />
+            <h3 className='h3'>Segurança</h3>
+            <p className='hidden xl:flex'>Torna o trabalho mais seguro para quem realizá-lo.</p>
           </div>
             
         </motion.div>
