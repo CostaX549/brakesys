@@ -30,12 +30,12 @@ export default function Hero() {
          { /* text */}
          <div className='text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0'> 
           <motion.h1 variants={ fadeIn('down', 0.2) } initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.6}} className='h1'>
-            Explore the Finest <span className='text-accent'>Global</span> Offers{''}
+           Conheça o Melhor<span className='text-accent'> Projeto</span> Mecânico{''}
           </motion.h1>
           <motion.p
           variants={ fadeIn('down', 0.4) } initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.6}}
           className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
-          Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.
+           Encontre a forma ideal de investir em seu veículo, não perca tempo e se torne cliente da Brake SYS.
           </motion.p>
           {/* btns */}
            <motion.div

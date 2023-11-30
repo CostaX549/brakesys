@@ -71,7 +71,7 @@ export default function Header() {
       <div className='flex justify-between items-center px-4'>
         { /* logo */ }
         <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
-          <Image src={'/icons/logo.svg'} width={194} height={64} alt='' />
+          <Image src={'/icons/image-removebg-preview.png'} width={215} height={64} alt='' />
         </Link>
         { /* nav open menu */ }
         <div onClick={() => setNav(!nav)} className='cursor-pointer xl:hidden'>{ nav ? (
@@ -98,12 +98,12 @@ export default function Header() {
           <Link 
            className=
           'cursor-pointer'
-           to='cars'
+           to='why'
            activeClass='active' 
            smooth={desktopMode} 
            spy={true}
           >
-          Cars
+          Projeto
           </Link>
           <Link 
            className=
@@ -113,9 +113,9 @@ export default function Header() {
            smooth={desktopMode} 
            spy={true}
           >
-          About
+          Sobre
           </Link>
-          <Link 
+      {/*     <Link 
            className=
           'cursor-pointer'
            to='why'
@@ -123,8 +123,8 @@ export default function Header() {
            smooth={desktopMode} 
            spy={true}
           >
-          Why us
-          </Link>
+          Por que nós?
+          </Link> */}
           <Link 
            className=
           'cursor-pointer'
@@ -133,7 +133,7 @@ export default function Header() {
            smooth={desktopMode} 
            spy={true}
           >
-          Testimonials
+          Testemunhos
           </Link>
 
           <Link 
@@ -144,7 +144,7 @@ export default function Header() {
            smooth={desktopMode} 
            spy={true}
           >
-           Contact
+           Contato
           </Link>
 
           <Link 

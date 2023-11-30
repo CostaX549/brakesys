@@ -33,7 +33,7 @@ const About = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6}}
             className='flex-1 mb-8'>
-              <Image className='rounded-[20px]' src={'/images/about/car01.png'} width={600} height={448}/>
+              <Image className='rounded-[20px]' src={'/images/about/carrofreando.webp'} width={625} height={448}/>
             </motion.div>
 
            {/* text & stats */} 
@@ -44,14 +44,14 @@ const About = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6}}
-              className='h2'>Car services simplified.</motion.h2>
+              className='h2'>Os melhores projetos.</motion.h2>
               <motion.p 
                variants={fadeIn('up', 0.6)}
                initial='hidden'
                whileInView={'show'}
                viewport={{ once: false, amount: 0.6}}
 
-              className='mb-[42px] max-w-md'>Rent, choose, and repair with ease. Our convenient locations, diverse car types, and reliable repair points ensure a seamless car experience.</motion.p>
+              className='mb-[42px] max-w-md'>Nossos projetos possuem o objetivo de oferecer maior segurança e conforto para você, garantindo a integridade do seu veículo.</motion.p>
               {/* stats */}
               <motion.div
                variants={fadeIn('up', 0.8)}
