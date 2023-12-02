@@ -141,7 +141,7 @@ export default function Header() {
            smooth={desktopMode} 
            spy={true}
           >
-          Testemunhos
+          Feedbacks
           </Link>
 
           <Link 
