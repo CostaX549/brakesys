@@ -25,7 +25,7 @@ import Image from 'next/image'
 // data
 const testimonialData = [
   {
-    message: 'They truly exceeded my expectations and made my car rental experience a delight',
+    message: 'Após utilizar o sangrador de freio, a velocidade do freio do meu veículo ficou muito melhor.',
     avatar: '/images/testimonial/avatar.png',
     name: 'Jane Doe',
     job: 'Photographer & Videographer'

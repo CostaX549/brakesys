@@ -44,14 +44,14 @@ const About = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6}}
-              className='h2'>Os melhores projetos.</motion.h2>
+              className='h2'>O melhor projeto.</motion.h2>
               <motion.p 
                variants={fadeIn('up', 0.6)}
                initial='hidden'
                whileInView={'show'}
                viewport={{ once: false, amount: 0.6}}
 
-              className='mb-[42px] max-w-md'>Nossos projetos possuem o objetivo de oferecer maior segurança e conforto para você, garantindo a integridade do seu veículo.</motion.p>
+              className='mb-[42px] max-w-xl'>Nosso projeto possui o objetivo de oferecer maior segurança e conforto para você, garantindo a integridade do seu veículo e melhorando integralmente o funcionamento do seu freio.</motion.p>
               {/* stats */}
               <motion.div
                variants={fadeIn('up', 0.8)}

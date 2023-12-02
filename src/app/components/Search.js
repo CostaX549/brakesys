@@ -16,7 +16,7 @@ export default function Search() {
       <HoursSelection />
       { /* btn */}
       <div className='xl:h-full flex items-center px-6 xl:px-0'>
-        <button className={`${ searchActive ? 'btn btn-sm btn-accent xl:w-[164px]' : 'btn btn-lg btn-accent xl:w-[184px]'}`}>Search</button>
+        <button className={`${ searchActive ? 'btn btn-sm btn-accent xl:w-[164px]' : 'btn btn-lg btn-accent xl:w-[184px]'}`}>BrakeSYS</button>
       </div>
       </div>
     
