@@ -55,7 +55,7 @@ export default function Hero() {
           <motion.p
           variants={ fadeIn('down', 0.4) } initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.6}}
           className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
-           Encontre a forma ideal de investir em seu veículo, não perca tempo e se torne cliente da Brake SYS.
+           Encontre a forma ideal de investir em sua oficina, não perca tempo e se torne cliente da Brake SYS.
           </motion.p>
           {/* btns */}
            <motion.div

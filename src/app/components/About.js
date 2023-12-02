@@ -44,57 +44,15 @@ const About = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6}}
-              className='h2'>O melhor projeto.</motion.h2>
+              className='h2'>Sobre nós.</motion.h2>
               <motion.p 
                variants={fadeIn('up', 0.6)}
                initial='hidden'
                whileInView={'show'}
                viewport={{ once: false, amount: 0.6}}
 
-              className='mb-[42px] max-w-xl'>Nosso projeto possui o objetivo de oferecer maior segurança e conforto para você, garantindo a integridade do seu veículo e melhorando integralmente o funcionamento do seu freio.</motion.p>
-              {/* stats */}
-              <motion.div
-               variants={fadeIn('up', 0.8)}
-               initial='hidden'
-               whileInView={'show'}
-               viewport={{ once: false, amount: 0.2}}
-               className='flex items-center gap-x-8 mb-12'>
-                {/* car types */}
-                <div className='flex flex-col w-[100px]'>
-                  <MdOutlineDirectionsCar className='text-5xl text-accent mb-2' />
-                  <div className='text-3xl font-black'>
-                    {inView ? ( <CountUp start={0} end={50} duration={3} delay={1} /> ) : null }
-                    +
-                  </div>
-                  <div className='uppercase text-[13px] font-semibold text-secondary '>
-                    tipos de <br /> carros
-                  </div>
-                </div>
-                 {/* rental outlets */}
-                 <div className='flex flex-col w-[100px]'>
-                  <MdOutlineMapsHomeWork className='text-5xl text-accent mb-2' />
-                  <div className='text-3xl font-black'>
-                    {inView ? ( <CountUp start={0} end={135} duration={3} delay={1} /> ) : null }
-                    +
-                  </div>
-                  <div className='uppercase text-[13px] font-semibold text-secondary '>
-                    rental <br /> outlets
-                  </div>
-                </div>
-                 {/* repair points */}
-                 <div className='flex flex-col w-[100px]'>
-                  <MdOutlineBuildCircle className='text-5xl text-accent mb-2' />
-                  <div className='text-3xl font-black'>
-                    {inView ?  ( <CountUp start={0} end={1} duration={1} delay={1} /> ) : null }
-                    
-                  </div>
-                  <div className='uppercase text-[13px] font-semibold text-secondary '>
-                    ponto de <br /> reparo
-                  </div>
-                </div>
-               
-              
-              </motion.div>
+              className='mb-[42px] max-w-xl'>A BRAKESYS é uma empresa de base tecnológica brasileira localizada em Taubaté-SP, especializada em oferecer equipamentos automotivos de manutenção..</motion.p>
+           
                {/* btn */}  
                <motion.button 
                 variants={fadeIn('up', 1)}
