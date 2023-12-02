@@ -72,29 +72,30 @@ export default function TestimonialSlider() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (!testimonialData.name || !testimonialData.job || !testimonialData.message) {
       setFormError('Por favor, preencha todos os campos.');
       return;
     }
-
+  
     if (testimonialData.message.length > 150) {
       setFormError('O feedback deve ter no máximo 50 caracteres.');
       return;
     }
-
+  
     try {
-
+      setLoading(true); // Define isLoading como true durante o envio do depoimento
       setFormError('');
-
-   
+  
       await addDoc(collection(database, 'testimonials'), testimonialData);
-
+  
       await loadTestimonials();
-
+  
       setTestimonialData({ name: '', job: '', message: '' });
     } catch (error) {
       console.error('Erro ao enviar depoimento:', error);
+    } finally {
+      setLoading(false); // Define isLoading como false após o envio do depoimento
     }
   };
   return (
