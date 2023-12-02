@@ -21,6 +21,26 @@ import { fadeIn } from '/variants';
 
 export default function Hero() {
  const {searchActive} = useContext(SearchContext)
+
+  const phoneNumber = '+5512920005356'; // Substitua pelo seu número de telefone
+
+  const handleWhatsAppClick = () => {
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappLink, '_blank');
+  };
+
+  const handleEmailClick = () => {
+ 
+    const destinatario = 'brakesys.contato@gmail.com';
+  
+
+    const linkEmail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${destinatario}`;
+
+  
+  
+    window.open(linkEmail, '_blank');
+  };
+
   return (
     <section className='h-screen xl:h-[90vh] bg-[#b2b7c2]/10' id='home'>
 
@@ -42,12 +62,19 @@ export default function Hero() {
             variants={ fadeIn('down', 0.6) } initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.8}}
             className='flex gap-x-3 justify-center xl:justify-start'>
             {/* btn appstore */}
-            <button className='btn-cta'>
-              <Image src={'/icons/buttons/app-store.svg'} width={132} height={36} alt='' />
+            <button className='btn-cta'  onClick={handleWhatsAppClick}>
+            <div className='flex items-center'>
+              <Image src={'/icons/buttons/WhatsApp.svg.png'} width={36} height={36} alt='' />
+              <span className='ml-2 text-white font-semibold'>Entrar em Contato</span>
+              </div>
+              
             </button>
-             {/* btn google */}
-            <button className='btn-cta'>
-              <Image src={'/icons/buttons/google-play.svg'} width={132} height={36} alt='' />
+             {/* btn gmail */}
+            <button className='btn-cta' onClick={handleEmailClick}>
+            <div className='flex items-center'>
+              <Image src={'/icons/buttons/gmail.png'} width={36} height={36} alt='' />
+              <span className='ml-2 text-white font-semibold'>Envie um email</span>
+              </div>
             </button>
           
            </motion.div>

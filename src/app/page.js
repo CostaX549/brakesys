@@ -17,6 +17,7 @@ export default function Home() {
   <main className='max-w-[1920px] bg-white mx-auto relative'>
     <Header />
     <Hero />
+
     <Why />
     <About />
   
