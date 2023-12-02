@@ -117,7 +117,7 @@ export default function TestimonialSlider() {
             dynamicBullets: true,
           }}
           modules={[Pagination]}
-          className="h-[450px] xl:h-[400px]"
+          className="h-[450px] xl:h-[350px]"
         > 
         {allTestimonials.map((person, index) => {
           const { message,name, job } = person;
