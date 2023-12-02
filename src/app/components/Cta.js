@@ -62,7 +62,7 @@ export default function Cta() {
             <button className='btn-cta'  onClick={handleWhatsAppClick}>
             <div className='flex items-center'>
               <Image src={'/icons/buttons/WhatsApp.svg.png'} width={36} height={36} alt='' />
-              <span className='ml-2 text-white font-semibold'>Entrar em Contato</span>
+              <span className='hidden md:block ml-2 text-white font-semibold'>Entrar em Contato</span>
               </div>
               
             </button>
@@ -70,7 +70,7 @@ export default function Cta() {
             <button className='btn-cta' onClick={handleEmailClick}>
             <div className='flex items-center'>
               <Image src={'/icons/buttons/gmail.png'} width={36} height={36} alt='' />
-              <span className='ml-2 text-white font-semibold'>Envie um email</span>
+              <span className='hidden md:block ml-2 text-white font-semibold'>Envie um email</span>
               </div>
             </button>
             </motion.div>

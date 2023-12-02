@@ -14,8 +14,8 @@ import { MdSecurity, MdAccessTime, MdTrendingUp } from 'react-icons/md'
 
 export default function Why() {
   return (
-    <section className="section flex items-center" id="why">
-      <div className="container mx-auto">
+    <section className="section flex items-center " id="why">
+      <div className="container mx-auto ">
         <motion.h2 
           variants={fadeIn('up', 0.2)}
           initial='hidden'
@@ -36,7 +36,7 @@ export default function Why() {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6}}
-         className='flex justify-center mb-6 xl:mb-2'>
+         className='hidden md:flex justify-center mb-6 xl:mb-2'>
           <Image src={'/images/why/sangrador3.png'} width={400} height={400} alt='' />
         </motion.div>
         {/* grid items */}
