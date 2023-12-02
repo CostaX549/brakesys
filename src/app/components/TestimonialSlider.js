@@ -78,7 +78,7 @@ export default function TestimonialSlider() {
       return;
     }
 
-    if (testimonialData.message.length > 50) {
+    if (testimonialData.message.length > 150) {
       setFormError('O feedback deve ter no máximo 50 caracteres.');
       return;
     }

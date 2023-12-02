@@ -156,17 +156,7 @@ export default function Header() {
            Contato
           </Link>
 
-          <Link 
-           className=
-          'xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto'
-          onClick={handleNavLinkClick}
-           to='/'
-           activeClass='active' 
-           smooth={desktopMode} 
-           spy={true}
-          >
-           See all cars
-          </Link>
+        
           <SearchMobile />
          
       </nav>
