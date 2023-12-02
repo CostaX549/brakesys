@@ -115,6 +115,7 @@ export default function Header() {
            className=
           'cursor-pointer'
            to='about'
+           onClick={handleNavLinkClick}
            activeClass='active' 
            smooth={desktopMode} 
            spy={true}
@@ -135,6 +136,7 @@ export default function Header() {
            className=
           'cursor-pointer'
            to='testimonial'
+           onClick={handleNavLinkClick}
            activeClass='active' 
            smooth={desktopMode} 
            spy={true}
@@ -146,6 +148,7 @@ export default function Header() {
            className=
           'cursor-pointer'
            to='contact'
+           onClick={handleNavLinkClick}
            activeClass='active' 
            smooth={desktopMode} 
            spy={true}
@@ -156,6 +159,7 @@ export default function Header() {
           <Link 
            className=
           'xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto'
+          onClick={handleNavLinkClick}
            to='/'
            activeClass='active' 
            smooth={desktopMode} 
