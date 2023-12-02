@@ -166,9 +166,13 @@ export default function TestimonialSlider() {
   onChange={(e) => setTestimonialData({ ...testimonialData, message: e.target.value })}
   className='outline-none bg-white h-20 border rounded-lg pl-4 focus:border-accent resize-none'
 ></textarea>
-        <button   type='submit' className='btn btn-sm w-full btn-accent w-24'>
-          Enviar
-        </button>
+<button type='submit' className={`btn btn-sm w-full btn-accent w-24 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`
+
+}
+disabled={loading}
+>
+  {loading ? 'Enviando...' : 'Enviar'}
+</button>
       </form>
     </motion.div>
   )
