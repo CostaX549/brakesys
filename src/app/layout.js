@@ -23,6 +23,10 @@ export const metadata = {
    address: false,
    telephone: false,
  },
+ openGraph: {
+  title: 'BrakeSYS',
+  description: 'brakeys',
+},
   
 }
 
