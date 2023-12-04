@@ -12,12 +12,18 @@ import CountUp from 'react-countup';
 //react intersection observer
 import { useInView } from 'react-intersection-observer'
 
+
+
 // motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '/variants'
 
+//react scroll
+import { Link } from 'react-scroll'
+
 
 const About = () => {
+ 
   const [ ref, inView ] = useInView({
      threshold: 0.5,
   })
@@ -54,14 +60,22 @@ const About = () => {
               className='mb-[42px] max-w-xl'>A BRAKESYS é uma empresa de base tecnológica brasileira localizada em Taubaté-SP, especializada em oferecer equipamentos automotivos de manutenção..</motion.p>
            
                {/* btn */}  
+               <Link 
+           className=
+          'cursor-pointer'
+       
+          to={'why'} smooth={true} spy={true}
+        
+          >
                <motion.button 
                 variants={fadeIn('up', 1)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.6}}
-               className='hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px]  h-16 uppercase font-medium text-white tracking-[2px] text-[13px] w-[250px]'>
+               className='bg-accent hover:bg-accent-hover rounded-[10px]  h-16 uppercase font-medium text-white tracking-[2px] text-[13px] w-[250px]'>
                 Veja o projeto
                 </motion.button>
+                </Link>
             </div>
            </div>
           </div>

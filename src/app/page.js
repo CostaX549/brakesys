@@ -30,7 +30,7 @@ export default function Home() {
     <Testimonial />
     <Cta />
     <Footer />
-    <BackToTopBtn />
+   
    {/*  <div className='h-[4000px]'></div> */}
   </main>
 

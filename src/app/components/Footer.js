@@ -21,7 +21,7 @@ import Copyright from './Copyright';
 
 export default function Footer() {
   return (
-    <footer className='pt-20 bg-white z-20'>
+    <footer className='pt-20 bg-white z-20' id='contact'>
       <div className='container mx-auto mb-24'>
        { /* grid */}
        <motion.div 
@@ -36,7 +36,7 @@ export default function Footer() {
           <Image src={'/icons/image-removebg-preview.png'} width={200} height={200} alt=''/>
           </Link>
           {/* text */}
-          <div className='text-secondary '>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <div className='text-secondary '>Fundado em 2023 por alunos do SENAI do curso técnico em Mecânica.</div>
           {/* phone & email */}
           <div className='flex flex-col gap-y-4 font-semibold'>
             {/* phone */}
@@ -54,13 +54,13 @@ export default function Footer() {
         { /* links */}
         <div className='flex-1 flex flex-col xl:items-center'>
           <div>
-            <h3 className='h3 font-bold mb-8'>Company</h3>
+            <h3 className='h3 font-bold mb-8'>Princípios</h3>
             <ul className='flex flex-col gap-y-4 font-semibold'>
-              <li><a href="">Taubaté</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Mobile</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">How we work?</a></li>
+              <li>Eficiência</li>
+              <li>Agilidade</li>
+              <li>Segurança</li>
+              <li>Facilidade de uso</li>
+            
              
             </ul>
           </div>
@@ -86,18 +86,14 @@ export default function Footer() {
       {/* newsletter*/}
       <div className='flex-1'>
           <h3 className='h3 font-bold mb-8'>Receba novidades</h3>
-         <div className='mb-9 text-secondary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-         {/* form */}
-         <form className='flex gap-x-2 h-14'>
-          <input type="text" placeholder="Seu email" className='outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent'/>
-            <button type='submit' className='btn btn-sm btn-accent w-24'>Enviar</button>
+         <div className='mb-9 text-secondary'>Em breve, estaremos disponíveis para o envio de emails, visando a realização de novos projetos.</div>
         
-         </form>
         </div>
      
        </motion.div>
-       <Copyright />
+     
       </div>
+      <Copyright />
     </footer>
   )
 }
