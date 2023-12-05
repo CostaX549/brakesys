@@ -13,24 +13,7 @@ import WppButton from "./WppButton"
 
 
 export default function Cta() {
-  const phoneNumber = '+5512920005356'; // Substitua pelo seu número de telefone
 
-  const handleWhatsAppClick = () => {
-    const whatsappLink = `https://wa.me/${phoneNumber}`;
-    window.open(whatsappLink, '_blank');
-  };
-
-  const handleEmailClick = () => {
- 
-    const destinatario = 'brakesys.contato@gmail.com';
-  
-
-    const linkEmail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${destinatario}`;
-
-  
-  
-    window.open(linkEmail, '_blank');
-  };
   return (
     <section className="pt-24 xl:pt-48 flex items-end pb-0 bg-[#b2b7c2]/10" id="contact">
       <div className='container mx-auto'>
