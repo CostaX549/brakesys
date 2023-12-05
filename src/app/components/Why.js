@@ -28,7 +28,7 @@ export default function Why() {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6}}
-        className='max-w-[800px] sm:w-full text-center mx-auto mb-2'>Um projeto que utiliza uma forma alternativa para realizar o processo de sangria do veículo, utilzando ar comprimido. A sangria do carro é a responsável pelo controle de ar dos freios.
+        className='max-w-[800px] sm:w-full text-center mx-auto mb-2'>Um projeto que utiliza uma forma alternativa para realizar o processo de sangria do veículo, utilizando ar comprimido. A sangria do carro é a responsável pelo controle de ar dos freios.
         </motion.p>
         { /* car image */}
         <motion.div

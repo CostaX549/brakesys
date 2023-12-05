@@ -57,7 +57,7 @@ const About = () => {
                whileInView={'show'}
                viewport={{ once: false, amount: 0.6}}
 
-              className='mb-[42px] max-w-xl'>A BRAKESYS é uma empresa de base tecnológica brasileira localizada em Taubaté-SP, especializada em oferecer equipamentos automotivos de manutenção..</motion.p>
+              className='mb-[42px] max-w-xl'>A BRAKESYS é uma empresa de base tecnológica brasileira localizada em Taubaté-SP, especializada em oferecer equipamentos automotivos de manutenção.</motion.p>
            
                {/* btn */}  
                <Link 
