@@ -82,7 +82,7 @@ export default function Hero() {
          {/* img car*/}
          <motion.div 
          variants={ fadeIn('up', 0.6) } initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.6}}
-         className='relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:right-[100px]  min-[1680px] xl:top-48'>
+         className='relative w-full h-full max-h-[50vh]  xl:max-w-[46%] xl:max-h-[57vh] xl:absolute xl:right-[100px] min-[1680px] xl:top-48'>
           <Image 
            src={'/images/hero/pngwing.com.png'}
            fill 
