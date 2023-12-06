@@ -36,8 +36,8 @@ export default function Why() {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6}}
-         className='hidden md:flex justify-center mb-6 xl:mb-2'>
-          <Image src={'/images/why/sangrador3.png'} width={400} height={400} alt='' />
+         className='flex justify-center mb-6 xl:mb-2'>
+          <Image src={'/images/why/sangradorjuniorhd.png'} className='p-6' width={320} height={320} alt='' />
         </motion.div>
         {/* grid items */}
         <motion.div
